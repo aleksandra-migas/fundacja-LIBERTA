@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+  --whiteBackground: #fff;
+  --whiteText: #fff;
+--lightGray: rgba(244, 245, 246);
+--gray: rgba(222, 226, 227);
+--lightGreen: rgba(19, 66, 58);
+--deepGreen: rgba(20, 46, 44);
+--deepGreenFooter: rgba(20, 46, 44);
+--navDeepGreen: rgba(20, 46, 44);
+--accentGreen: rgba(82, 102, 92);
+--gold: rgba(206, 172, 33);/* rgba(163, 136, 23);*/
+--decorativeFont: 'Playfair Display SC', serif;
+--titleFont: 'Playfair Display', serif;
+}
+.dark-mode{
+  --whiteBackground:  #252525;
+  --whiteText: yellow;
+  --darkText: yellow;
+--lightGray: #3a3838;
+--gray: #252525;
+--lightGreen: #252525;
+--deepGreen:  #252525;
+--deepGreenFooter:#3a3838;
+--navDeepGreen: yellow;
+--accentGreen: #252525;
+--gold: yellow;
+}
+
+
+ html, body{
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6rem;
+    color: var(--darkText);
+ }
+ @media screen and (min-width: 320px){
+  body{
+    background-color: var(--whiteBackground);
+  }
+    .logo{
+      width: 2.2rem;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        height: 10vh;
+        left:0;
+        right: 0;
+        top: 0;
+        padding: 0 2rem;
+        background-color: var(--lightGray);
+        z-index: 999;
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top:10vh;
+        width: 100%;
+        background-color: var(--lightGray);
+        transform: translateX(100%);
+    }
+    .nav-links li {
+        list-style: none;
+        /*opacity: 0;*/
+        /*display: none;*/
+       
+      }
+      .nav-links li a {
+        text-decoration: none;
+        z-index: 9999;
+        color: var(--navDeepGreen);
+        font-size: 1rem;
+      }
+      .contrast-btn{
+        border: none;
+        color: var(--darkText);
+        background-color: transparent;
+        cursor: pointer;
+      }
+      .contrast-btn i{
+        margin-left: .5rem;
+      }
+      .burger{
+        position:absolute;
+        right: 2rem;
+        z-index: 99999;
+      }
+      .burger div{
+        width: 28px;
+        height: 2px;
+        background-color:var(--navDeepGreen);
+        margin: 5px;
+        transition: all 0.3s ease;
+        align-items: flex-end;
+      }   
+    .nav-active{
+        transform: translateX(0%);
+        transition: transform 0.5s ease-in;
+      }
+      @keyframes navLinkSlide{
+          from{
+              opacity: 0;
+              transform: translateX(50px);
+          }
+          to{
+              opacity: 1;
+              transform: translateX(0px)
+          }
+      }
+      .header-container{
+        background-color: var(--lightGreen);
+        height: 20vh;
+        margin-top: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .header-container h1{
+        color: var(--whiteText);
+        font-weight: 400;
+      }
+      main{
+        padding: 2rem 1rem;
+      }
+     
+     
+       footer{
+        width:100%;
+        background-color: var(--deepGreenFooter);
+        color: var(--whiteText);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .footer-links li {
+        list-style: none;
+        margin: .5rem 0;
+      }
+      .footer-links li a{
+        text-decoration: none;
+        color: var(--whiteText);
+      }
+      footer p{
+        font-weight: 300;
+        margin-bottom: .5rem;
+      }
+  
+ }
+
+ @media screen and (min-width: 700px){
+  nav {
+    height: 12vh;
+    justify-content: space-between;
+  }
+  .burger{
+    display: none;
+  }
+  .nav-links {
+    all: unset;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+  }
+  .nav-links li{
+   opacity: 1;
+  } 
+  .nav-links li a{
+    font-size: 1rem;
+  }
+  .nav-links li a:hover{
+    color: var(--gold);
+  }
+  .nav-links li button:hover{
+    color: var(--gold);
+  }
+ 
+ }
+
+ @media screen and (min-width: 1000px){
+   
+}
