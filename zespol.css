@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+/*:root{
+  --darkText: rgba(20, 46, 44);
   --whiteBackground: #fff;
   --whiteText: #fff;
 --lightGray: rgba(244, 245, 246);
@@ -16,7 +17,24 @@
 --gold: rgba(206, 172, 33);
 --decorativeFont: 'Playfair Display SC', serif;
 --titleFont: 'Playfair Display', serif;
+}*/
+
+:root{
+  --whiteBackground: #fff;
+  --whiteText: #fff;
+  --darkText: rgba(20, 46, 44);
+  --lightGray: rgba(212, 226, 220);
+--gray: rgba(222, 226, 227);
+--lightGreen: rgba(21, 80, 81);
+--deepGreen: rgba(21, 80, 81);
+--navDeepGreen: rgba(21, 80, 81);
+--deepGreenFooter: rgba(21, 80, 81);
+--accentGreen: rgba(54, 97, 80);
+--gold: rgba(206, 172, 33);
+--decorativeFont: 'Playfair Display SC', serif;
+--titleFont: 'Playfair Display', serif;
 }
+
 .dark-mode{
   --whiteBackground:  #252525;
   --whiteText: yellow;
@@ -135,7 +153,7 @@
         padding: 2rem 1rem;
       }
       .card-wrapper{
-        max-width: 650px;
+        max-width: 1000px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -165,6 +183,7 @@
         color: var(--darkText);
     }
     .section-2{
+      width: 100%;
       background-color:var(--accentGreen)
     }
     .section-2 h1{
@@ -180,7 +199,7 @@
       display: flex;
       flex-direction: column;
       color: var(--whiteText);
-     
+     margin: 0 auto;
     }
    .wspolpraca-text{
     padding: 2rem 0;

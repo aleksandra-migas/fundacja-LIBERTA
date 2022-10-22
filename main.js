@@ -19,8 +19,39 @@ const navSlide = () => {
 navSlide();
 
 //contrast changer
-const darkMode = document.querySelector('.contrast-btn');
+/*const darkMode = document.querySelector('.contrast-btn');
 
 darkMode.onclick = function(){
     document.body.classList.toggle('dark-mode');
-}
+}*/
+
+// Dark mode + local storage:
+
+let darkMode = localStorage.getItem('darkMode');
+const contrastButton = document.querySelector('#contrast-btn');
+
+const enableDarkMode = () => {
+document.body.classList.add('dark-mode');
+localStorage.setItem('darkMode', 'enabled');
+};
+
+const disableDarkMode = () => {
+    document.body.classList.remove('dark-mode');
+    localStorage.setItem('darkMode', null);
+    };
+
+    if (darkMode === 'enabled') {
+        enableDarkMode();
+    }
+
+contrastButton.addEventListener('click', () => {
+    darkMode = localStorage.getItem('darkMode');
+    if (darkMode !== 'enabled') {
+        enableDarkMode();
+        console.log(darkMode);
+    } else {
+        disableDarkMode();
+        console.log(darkMode);
+    }
+});
+

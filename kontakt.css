@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+/*:root{
+  --darkText: rgba(20, 46, 44);
   --whiteBackground: #fff;
   --whiteText: #fff;
 --lightGray: rgba(244, 245, 246);
@@ -16,7 +17,24 @@
 --gold: rgba(206, 172, 33);
 --decorativeFont: 'Playfair Display SC', serif;
 --titleFont: 'Playfair Display', serif;
+}*/
+
+:root{
+  --whiteBackground: #fff;
+  --whiteText: #fff;
+  --darkText: rgba(20, 46, 44);
+  --lightGray: rgba(212, 226, 220);
+--gray: rgba(222, 226, 227);
+--lightGreen: rgba(21, 80, 81);
+--deepGreen: rgba(21, 80, 81);
+--navDeepGreen: rgba(21, 80, 81);
+--deepGreenFooter: rgba(21, 80, 81);
+--accentGreen: rgba(54, 97, 80);
+--gold: rgba(206, 172, 33);
+--decorativeFont: 'Playfair Display SC', serif;
+--titleFont: 'Playfair Display', serif;
 }
+
 .dark-mode{
   --whiteBackground:  #252525;
   --whiteText: yellow;
