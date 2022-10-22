@@ -108,6 +108,7 @@
         cursor: pointer;
       }
       .contrast-btn i{
+        font-size: 1.2rem;
         margin-left: .5rem;
       }
       .burger{
