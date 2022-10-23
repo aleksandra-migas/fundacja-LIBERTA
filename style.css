@@ -258,6 +258,32 @@ font-size: 2rem;
       font-size: .85rem;
       color: var(--accentGreen);
      }
+     .section-2 hr{
+      width: 100%;
+      border: none;
+      height: 1px;
+      background-color: var(--lightGray);
+     }
+     .section-2 p{
+      margin: 3rem 1rem;
+      line-height: 1.6rem;
+     }
+     .logos-wrapper{
+      width: 100vw;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
+      grid-gap: 10px;
+      justify-content: center;
+     }
+    .logo-img{
+      width: 80px;
+      height: 50px;
+    }
+    .logo-img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+    }
 footer{
   width:100%;
   background-color: var(--deepGreenFooter);
@@ -316,7 +342,9 @@ header{
 }
 .intro{
   margin: 4rem 6rem;
-  
+}
+.section-2 p{
+  margin: 4rem 6rem;
 }
 
 }
