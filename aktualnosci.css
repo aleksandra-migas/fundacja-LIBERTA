@@ -24,7 +24,7 @@
   --whiteBackground: #fff;
   --whiteText: #fff;
   --darkText: rgba(20, 46, 44);
-  --lightGray: rgba(212, 226, 220);
+  --lightGray: rgba(244, 245, 246);
 --gray: rgba(222, 226, 227);
 --lightGreen: rgba(21, 80, 81);
 --deepGreen: rgba(21, 80, 81);
@@ -34,7 +34,16 @@
 --gold: rgba(206, 172, 33);
 --decorativeFont: 'Playfair Display SC', serif;
 --titleFont: 'Playfair Display', serif;
+--smallFont: 1rem;
 }
+
+.large-font{
+  --smallFont: 1.5rem;
+}
+
+.enable-color{
+  font-size: 2rem;
+  }
 
 .dark-mode{
   --whiteBackground:  #252525;
@@ -52,6 +61,7 @@
 
  html, body{
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: var(--smallFont);
     overflow-x: hidden;
     line-height: 1.6rem;
     color: var(--darkText);
@@ -85,6 +95,7 @@
         right: 0px;
         height: 90vh;
         top:10vh;
+        padding: 3rem 0;
         width: 100%;
         background-color: var(--lightGray);
         transform: translateX(100%);
@@ -110,6 +121,16 @@
       .contrast-btn i{
         font-size: 1.2rem;
         margin-left: .5rem;
+      }
+      .font-btn{
+        font-weight: 600;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: var(--darkText);
+      }
+      .big-a{
+        font-size: 1.2rem;
       }
       .burger{
         position:absolute;
@@ -165,7 +186,7 @@
         padding: 4rem 0;
        }
        .card{
-        height: 400px;
+        height: 450px;
         display: flex;
         flex-direction: column;
         align-items: center;

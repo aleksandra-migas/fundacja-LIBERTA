@@ -32,11 +32,13 @@ const contrastButton = document.querySelector('#contrast-btn');
 
 const enableDarkMode = () => {
 document.body.classList.add('dark-mode');
+contrastButton.classList.add('enable-color');
 localStorage.setItem('darkMode', 'enabled');
 };
 
 const disableDarkMode = () => {
     document.body.classList.remove('dark-mode');
+    contrastButton.classList.remove('enable-color');
     localStorage.setItem('darkMode', null);
     };
 
@@ -52,6 +54,38 @@ contrastButton.addEventListener('click', () => {
     } else {
         disableDarkMode();
         console.log(darkMode);
+    }
+});
+
+// Large font + local storage
+
+let largeFont = localStorage.getItem('largeFont');
+const fontButton = document.querySelector('#font-btn');
+
+const enableLargeFont = () => {
+document.body.classList.add('large-font');
+fontButton.classList.add('enable-color');
+localStorage.setItem('largeFont', 'enabledFont');
+};
+
+const disableLargeFont = () => {
+    document.body.classList.remove('large-font');
+    fontButton.classList.remove('enable-color');
+    localStorage.setItem('largeFont', null);
+    };
+
+    if (largeFont === 'enabledFont') {
+        enableLargeFont();
+    }
+
+fontButton.addEventListener('click', () => {
+    largeFont = localStorage.getItem('largeFont');
+    if (largeFont !== 'enabledFont') {
+        enableLargeFont();
+        console.log(largeFont);
+    } else {
+        disableLargeFont();
+        console.log(largeFont);
     }
 });
 
