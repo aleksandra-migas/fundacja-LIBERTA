@@ -71,7 +71,8 @@
     background-color: var(--whiteBackground);
   }
     .logo{
-      width: 2.2rem;
+      width: 10rem;
+      cursor: pointer;
     }
     nav{
         width: 100%;
@@ -170,6 +171,7 @@
       .header-container h1{
         color: var(--whiteText);
         font-weight: 400;
+        text-transform: uppercase;
       }
       .section-1{
         padding: 2rem 1rem;
@@ -204,8 +206,29 @@
         font-family: var(--titleFont);
         color: var(--darkText);
     }
+    .section-1 .short-text{
+      max-width: 450px;
+    }
+    .more, .more2, .more3{
+      display: none;
+    }
+    .more-btn, .more-btn2, .more-btn3{
+      background-color: var(--whiteBackground);
+      color: var(--darkText);
+      border: var(--darkText) 2px solid;
+      padding: .5rem 1rem;
+      margin-top: 2rem;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .card button:hover{
+      border: var(--deepGreen) 3px solid;
+     
+/*background-color: var(--gold);
+color: var(--whiteText);*/
+    }
     .section-2{
-      width: 100%;
+      /*width: 100%;*/
       background-color:var(--accentGreen)
     }
     .section-2 h1{
@@ -216,9 +239,11 @@
       padding-top: 2rem;
     }
     .wspolpraca-wrapper{
-      max-width: 1000px;
-      padding: 2rem 1rem;
+      max-width: 1500px;
+     padding: 2rem 1rem;
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
       color: var(--whiteText);
      margin: 0 auto;
@@ -236,6 +261,25 @@
       background-color: var(--whiteText);
       margin: .5rem 0;
     }
+    .section-2 .short-text{
+      width: 250px;
+      padding: 1rem 0;
+    }
+    .more4, .more5, .more6{
+      display: none;
+    }
+    .more-btn4, .more-btn5, .more-btn6{
+      background-color: var(--accentGreen);
+      color: var(--whiteText);
+      border: var(--whiteText) 2px solid;
+      padding: .5rem 1rem;
+      margin-top: 2rem;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .section-2 button:hover{
+      border: var(--whiteText) 3px solid;
+    }
     footer{
       width:100%;
       background-color: var(--deepGreenFooter);
@@ -246,9 +290,12 @@
       align-items: center;
       text-align: center;
     }
+    .footer-links-flex{
+      display: flex;
+    }
     .footer-links li {
       list-style: none;
-      margin: .5rem 0;
+      margin: .5rem;
     }
     .footer-links li a{
       text-decoration: none;
@@ -294,6 +341,7 @@
    }
    .wspolpraca-wrapper{
     flex-direction: row;
+    align-items: unset;
    }
    .wspolpraca-text{
     padding: 0 2rem;

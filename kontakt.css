@@ -71,7 +71,8 @@
     background-color: var(--whiteBackground);
   }
     .logo{
-      width: 2.2rem;
+      width: 10rem;
+      cursor: pointer;
     }
     nav{
         width: 100%;
@@ -170,6 +171,7 @@
       .header-container h1{
         color: var(--whiteText);
         font-weight: 400;
+        text-transform: uppercase;
       }
       main{
         padding: 2rem 1rem;
@@ -182,9 +184,9 @@
         background-color: var(--gold);
       }
       section h2{
-        margin: 2rem 0;
+        margin: 1rem 0;
+        margin-top: 3rem;
       }
-     
        footer{
         width:100%;
         background-color: var(--deepGreenFooter);
@@ -195,9 +197,12 @@
         align-items: center;
         text-align: center;
       }
+      .footer-links-flex{
+        display: flex;
+      }
       .footer-links li {
         list-style: none;
-        margin: .5rem 0;
+        margin: .5rem;
       }
       .footer-links li a{
         text-decoration: none;
@@ -239,7 +244,9 @@
   .nav-links li button:hover{
     color: var(--gold);
   }
- 
+  section{
+    margin: 4rem 6rem;
+  }
  }
 
  @media screen and (min-width: 1000px){
