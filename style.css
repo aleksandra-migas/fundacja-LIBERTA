@@ -73,7 +73,10 @@ font-size: 2rem;
     background-color: var(--whiteBackground);
   }
     .logo{
-        width:10rem;
+       display: none;
+    }
+    .logo-phone{
+        width:2rem;
         cursor: pointer;
     }
     nav{
@@ -232,7 +235,7 @@ font-size: 2rem;
       padding: .5rem;
      }
      .card-3{
-      height: 650px;
+      height: 550px;
      }
      .img-box{
       width: 300px;
@@ -284,17 +287,17 @@ font-size: 2rem;
      .logos-wrapper{
       width: 100vw;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 150px));
+      grid-template-columns: repeat(auto-fit, minmax(50px, 150px));
+     grid-template-rows: repeat(auto-fit, minmax(50px, 150px));
       grid-gap: 10px;
       justify-content: center;
+      align-items: center;
      }
     .logo-img{
-      width: 80px;
-      height: 100px;
+    height: 100px;
     }
     .logo-img img{
       width: 100%;
-      height: 100%;
       object-fit: cover; 
     }
 footer{
@@ -328,6 +331,14 @@ footer p{
  nav {
   height: 12vh;
   justify-content: space-between;
+}
+.logo{
+  display: inline;
+  width:8rem;
+  cursor: pointer;
+}
+.logo-phone{
+  display: none;
 }
 .burger{
   display: none;

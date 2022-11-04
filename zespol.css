@@ -70,10 +70,13 @@
   body{
     background-color: var(--whiteBackground);
   }
-    .logo{
-      width: 10rem;
-      cursor: pointer;
-    }
+  .logo{
+    display: none;
+ }
+ .logo-phone{
+     width:2rem;
+     cursor: pointer;
+ }
     nav{
         width: 100%;
         display: flex;
@@ -186,7 +189,6 @@
         display: flex;
         flex-direction: column;
         margin: 2rem 0;
-        
       }
       .card-wrapper img{
         height: 50vh;
@@ -198,16 +200,19 @@
     .card hr{
         border: none;
         height: 1px;
-        width: 30%;
-        margin: .5rem 0;
+        width: 60px;
+        margin: .8rem 0;
         background-color: var(--gold);
     }
     .card h2{
         font-family: var(--titleFont);
         color: var(--darkText);
     }
-    .section-1 .short-text{
+    /*.section-1 .short-text, .short-text2, .short-text3{
       max-width: 450px;
+    }*/
+    .dots, .dots2, .dots3{
+      color: transparent;
     }
     .more, .more2, .more3{
       display: none;
@@ -223,19 +228,18 @@
     }
     .card button:hover{
       border: var(--deepGreen) 3px solid;
-     
-/*background-color: var(--gold);
-color: var(--whiteText);*/
     }
-    .section-2{
-      /*width: 100%;*/
-      background-color:var(--accentGreen)
+    .long-hr{
+      width: 100%;
+      border: none;
+      height: 1px;
+      background-color: var(--lightGray);
     }
     .section-2 h1{
       font-size: 2rem;
       font-weight: 400;
       text-align: center;
-      color: var(--whiteText);
+      color: var(--darkText);
       padding-top: 2rem;
     }
     .wspolpraca-wrapper{
@@ -245,40 +249,39 @@ color: var(--whiteText);*/
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      color: var(--whiteText);
+      /*color: var(--whiteText);*/
+      color: var(--darkText);
      margin: 0 auto;
     }
    .wspolpraca-text{
     padding: 2rem 0;
+    width: 300px;
    }
     .wspolpraca-text h2{
-      font-weight: 300;
+      font-weight: 400;
+      margin: 1rem 0;
     }
-    .wspolpraca-text hr{
-      border: none;
-      width: 30%;
-      height: 1px;
-      background-color: var(--whiteText);
-      margin: .5rem 0;
+    .dots4, .dots5, .dots6{
+      color: transparent;
     }
-    .section-2 .short-text{
+    /*.section-2 .short-text{
       width: 250px;
       padding: 1rem 0;
-    }
+    }*/
     .more4, .more5, .more6{
       display: none;
     }
     .more-btn4, .more-btn5, .more-btn6{
-      background-color: var(--accentGreen);
-      color: var(--whiteText);
-      border: var(--whiteText) 2px solid;
+      background-color: transparent;
+      color: var(--darkText);
+      border: var(--darkText) 2px solid;
       padding: .5rem 1rem;
-      margin-top: 2rem;
+      margin-top: 1rem;
       text-transform: uppercase;
       cursor: pointer;
     }
     .section-2 button:hover{
-      border: var(--whiteText) 3px solid;
+      border: var(--darkText) 3px solid;
     }
     footer{
       width:100%;
@@ -305,12 +308,20 @@ color: var(--whiteText);*/
       font-weight: 300;
       margin-bottom: .5rem;
     }
- }
+  }  
 
  @media screen and (min-width: 700px){
   nav {
     height: 12vh;
     justify-content: space-between;
+  }
+  .logo{
+    display: inline;
+    width:8rem;
+    cursor: pointer;
+  }
+  .logo-phone{
+    display: none;
   }
   .burger{
     display: none;

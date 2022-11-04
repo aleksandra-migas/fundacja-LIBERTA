@@ -70,10 +70,13 @@
   body{
     background-color: var(--whiteBackground);
   }
-    .logo{
-      width: 10rem;
-      cursor: pointer;
-    }
+  .logo{
+    display: none;
+ }
+ .logo-phone{
+     width:2rem;
+     cursor: pointer;
+ }
     nav{
         width: 100%;
         display: flex;
@@ -219,6 +222,14 @@
   nav {
     height: 12vh;
     justify-content: space-between;
+  }
+  .logo{
+    display: inline;
+    width:8rem;
+    cursor: pointer;
+  }
+  .logo-phone{
+    display: none;
   }
   .burger{
     display: none;
