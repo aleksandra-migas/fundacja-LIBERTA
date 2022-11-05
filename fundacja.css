@@ -198,11 +198,14 @@
     }
     .section-2{
       margin: 3rem 2rem;
-      display: flex;
     }
     .section-2 h2{
       font-weight: 400;
       font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .statut-container{
+      margin-top: 2rem;
     }
     .fa-file-pdf{
       margin-left: 1rem;

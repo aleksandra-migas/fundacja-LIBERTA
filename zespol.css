@@ -208,6 +208,9 @@
         font-family: var(--titleFont);
         color: var(--darkText);
     }
+    .section-1 ul{
+      margin-left: 1rem;
+    }
     /*.section-1 .short-text, .short-text2, .short-text3{
       max-width: 450px;
     }*/
@@ -260,6 +263,9 @@
     .wspolpraca-text h2{
       font-weight: 400;
       margin: 1rem 0;
+    }
+    .section-2 ul{
+      margin-left: 1rem;
     }
     .dots4, .dots5, .dots6{
       color: transparent;

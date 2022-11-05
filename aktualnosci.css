@@ -194,8 +194,11 @@
         align-items: center;
         padding: .5rem;
        }
+       .card-2{
+        height: 800px;
+       }
        .card-3{
-        height: 550px;
+        height: 600px;
        }
        .img-box{
         width: 300px;
