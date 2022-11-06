@@ -116,6 +116,14 @@
         color: var(--navDeepGreen);
         font-size: 1rem;
       }
+      .nav-icons ul{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+      .ukr-flag{
+        width: 2rem;
+      }
       .contrast-btn{
         border: none;
         color: var(--darkText);
@@ -190,12 +198,21 @@
         flex-direction: column;
         margin: 2rem 0;
       }
+      .card .img-box{
+        height: 300px;
+        width: 220px;
+        margin: 2rem;
+      }
       .card-wrapper img{
-        height: 50vh;
+       /* height: 50vh;*/
+       height:100%;
+       width: 100%;
+       object-fit: cover;
         border: var(--gray) 12px solid;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
         /*border: rgba(111, 131, 132) 15px solid;*/
         margin-bottom: 1rem;
+        
       }
     .card hr{
         border: none;
@@ -339,7 +356,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 60%;
+    width: 70%;
   }
   .nav-links li{
    opacity: 1;
@@ -373,6 +390,12 @@
  }
 
  @media screen and (min-width: 1000px){
+  .nav-links{
+    width: 60%;
+  }
+  .nav-icons ul{
+    gap: 1rem;
+  }
    .card{
     flex-direction: row;
    }

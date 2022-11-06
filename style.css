@@ -119,6 +119,14 @@ font-size: 2rem;
         color: var(--navDeepGreen);
         font-size: 1rem;
       }
+      .nav-icons ul{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+      .ukr-flag{
+        width: 2rem;
+      }
       .contrast-btn{
         border: none;
         color: var(--darkText);
@@ -228,14 +236,14 @@ font-size: 2rem;
       justify-content: center;
      }
      .card{
-      height: 450px;
+      height: 500px;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: .5rem;
      }
      .card-2{
-      height: 800px;
+      height: 550px;
      }
      .card-3{
       height: 600px;
@@ -353,7 +361,7 @@ footer p{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 60%;
+  width: 70%;
 }
 .nav-links li{
  opacity: 1;
@@ -366,6 +374,9 @@ footer p{
 }
 .nav-links li button:hover{
   color: var(--gold);
+}
+.nav-icons ul{
+  gap: .5rem;
 }
 header{
   background-position: 50% 30%;
@@ -380,6 +391,12 @@ header{
 }
 
  @media screen and (min-width: 1000px){
+  .nav-links{
+    width: 60%;
+  }
+  .nav-icons ul{
+    gap: 1rem;
+  }
     .header-container h1{
       font-size: 5rem;
     }
