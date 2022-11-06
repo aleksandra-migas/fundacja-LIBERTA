@@ -281,5 +281,7 @@
   }
   .img-box{
     margin-right: 2rem;
+    width: 400px;
+    height: 300px;
   }
 }

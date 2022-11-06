@@ -25,7 +25,7 @@
   --darkText: rgba(20, 46, 44);
   --lightGray: rgba(244, 245, 246);
 --gray: rgba(222, 226, 227);
---lightGreen: rgba(21, 80, 81);
+--lightGreen:/* rgba(21, 80, 81);*/rgba(31, 127, 132);
 --deepGreen: rgba(21, 80, 81);
 --navDeepGreen: rgba(21, 80, 81);
 --deepGreenFooter: rgba(21, 80, 81);
