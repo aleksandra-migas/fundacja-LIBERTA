@@ -175,11 +175,26 @@
         min-height: 90vh;
         padding: 2rem 1rem;
       }
-      section div{
-        margin: 3rem 0;
+      section{
+        display: flex;
+        flex-direction: column;
       }
       section h1{
         margin: 2rem 0;
+      }
+      .img-box{
+        background-image: linear-gradient(
+          rgba(81, 72, 76, 0.2),
+          rgba(81, 72, 76, 0.2)
+        ),linear-gradient(
+          rgba(81, 72, 76, 0.2),
+          rgba(81, 72, 76, 0.2)
+        ),
+        url(images/img-2.jpg);
+        background-size: cover;
+        width: 300px;
+        height: 220px;
+        margin: 3rem auto;
       }
        footer{
         width:100%;
