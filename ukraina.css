@@ -273,5 +273,13 @@
   .nav-icons ul{
     gap: 1rem;
   }
-   
+  section{
+    flex-direction: row;
+  }
+  .text-box{
+    width: 60%;
+  }
+  .img-box{
+    margin-right: 2rem;
+  }
 }
