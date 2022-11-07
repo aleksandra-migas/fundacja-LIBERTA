@@ -18,13 +18,6 @@ const navSlide = () => {
 }
 navSlide();
 
-//contrast changer
-/*const darkMode = document.querySelector('.contrast-btn');
-
-darkMode.onclick = function(){
-    document.body.classList.toggle('dark-mode');
-}*/
-
 // Dark mode + local storage:
 
 let darkMode = localStorage.getItem('darkMode');
@@ -207,36 +200,4 @@ moreBtn6.addEventListener('click', (e) =>{
         more6.style.display = 'inline';
     }
 });
-
-
-/*let more = document.querySelectorAll('.more');
-const moreBtn = document.querySelectorAll('.more-btn');
-const dots = document.querySelectorAll('.dots');
-
-for (let i = 0; i < moreBtn.length; i++){
-    moreBtn[i].addEventListener('click', function(){
-
-        if (dots.style.display === 'none'){
-            dots.style.display = 'inline';
-            moreBtn.innerHTML = 'Czytaj więcej';
-            more.style.display = 'none';
-        }else{
-            dots.style.display = 'none';
-            moreBtn.innerHTML = 'Czytaj mniej';
-            more.style.display = 'inline';
-        }
-
-    })
-};*/
-
-
-
-/*moreBtn.addEventListener('click', (e) =>{
-   if(moreBtn.innerText === 'Czytaj więcej'){
-more.style.innerHTML = 'inline';
-    moreBtn.innerText = 'Czytaj mniej';
-   } else{
-    moreBtn.innerText = 'Czytaj więcej';
-   }
-});*/
 

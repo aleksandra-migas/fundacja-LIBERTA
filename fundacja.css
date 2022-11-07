@@ -183,10 +183,14 @@
         text-transform: uppercase;
       }
       main{
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
       }
       .section-1{
-        margin: 3rem 0;
+        margin: 1rem 0;
+        margin-top: 0;
+      }
+      .section-1 .text{
+        margin-bottom: 2rem;
       }
       .logo-img{
         width: 100%;
@@ -205,15 +209,27 @@
       background-color: var(--lightGray);
     }
     .section-2{
-      margin: 3rem 2rem;
+      margin: 0 2rem;
     }
     .section-2 h2{
-      font-weight: 400;
+      font-weight: 600;
       font-size: 1rem;
       margin-bottom: 1rem;
     }
+    .fa-file{
+      color: var(--gold);
+      font-size: 1.2rem;
+      margin-right: 1rem;
+    }
     .statut-container{
       margin-top: 2rem;
+    }
+    .statut-container h2{
+      margin-top: 4rem;
+      font-weight: 600;
+    }
+    .section-2 ul{
+      margin-left: 1rem;
     }
     .statut-container h3{
       margin: 2rem 0;
@@ -223,11 +239,23 @@
       text-align: center;
       margin-top: 1rem;
     }
-    .fa-file-pdf{
-      margin-left: 1rem;
-      font-size: 2rem;
-      color: var(--gold);
+   .statut-text{
+    display: none;
+   }
+   .statut-dots{
+    color: transparent;
+   }
+   .statut-btn{
+    background-color: var(--whiteBackground);
+      color: var(--darkText);
+      border: var(--darkText) 2px solid;
+      padding: .5rem 1rem;
+      text-transform: uppercase;
       cursor: pointer;
+      margin-top: 1rem;
+    }
+    .card button:hover{
+      border: var(--deepGreen) 3px solid;
     }
     footer{
       width:100%;
@@ -294,7 +322,7 @@
     color: var(--gold);
   }
     .section-1{
-      margin: 4rem 6rem;
+      margin: 1rem 6rem;
     }
  .logo-img img{
     width: 20vh;
@@ -312,4 +340,19 @@
   .nav-icons ul{
     gap: 1rem;
   }
+  .section-1{
+    display: flex;
+  }
+  .section-1 .text{
+    width: 70%;
+  }
+  .logo-img{
+    width: 30%;
+    display: flex;
+    
+  }
+.logo-img img{
+    width: 20vh;
+    margin-bottom: 2rem;
+}
 }
