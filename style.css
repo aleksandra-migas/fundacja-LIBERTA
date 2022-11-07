@@ -133,13 +133,11 @@ font-size: 2rem;
         background-color: transparent;
         cursor: pointer;
       }
-      .contrast-btn img{
-        width: 1rem;
-      }
-      /*.contrast-btn i{
+     
+      .contrast-btn i{
         font-size: 1.2rem;
         margin-left: .5rem;
-      }*/
+      }
       .font-btn{
         font-weight: 400;
         border: none;
