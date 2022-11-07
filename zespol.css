@@ -396,6 +396,9 @@
   .nav-icons ul{
     gap: 1rem;
   }
+  .section-1{
+    padding: 2rem 4rem;
+  }
    .card{
     flex-direction: row;
    }
