@@ -190,7 +190,7 @@
         margin-top: 0;
       }
       .section-1 .text{
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
       .logo-img{
         width: 100%;
@@ -216,6 +216,9 @@
       font-size: 1rem;
       margin-bottom: 1rem;
     }
+    .section-2 ul{
+      margin-left: 1rem;
+    }
     .fa-file{
       color: var(--gold);
       font-size: 1.2rem;
@@ -227,9 +230,6 @@
     .statut-container h2{
       margin-top: 4rem;
       font-weight: 600;
-    }
-    .section-2 ul{
-      margin-left: 1rem;
     }
     .statut-container h3{
       margin: 2rem 0;
@@ -328,7 +328,7 @@
     width: 20vh;
 }
 .section-2{
-  margin: 4rem 6rem;
+  margin: 1rem 6rem;
 }
 
 }
